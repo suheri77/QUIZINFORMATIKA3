@@ -14,7 +14,7 @@ let count = 91;
 let countdown;
 let restartAttempts = 0; // Counter for restart attempts
 
-const firstPasswords = ["s", "m", "d"];
+const firstPasswords = ["md", "jd", "py"];
 const secondPasswords = ["5", "10", "15"];
 
 let selectedFirstPassword, selectedSecondPassword;
