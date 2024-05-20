@@ -10,7 +10,7 @@ let startScreen = document.querySelector(".start-screen");
 let startButton = document.getElementById("start-button");
 let questionCount;
 let scoreCount = 0;
-let count = 21;
+let count = 91;
 let countdown;
 let restartAttempts = 0; // Counter for restart attempts
 
@@ -170,7 +170,7 @@ const quizArray = [
 
 // Restart Quiz
 restart.addEventListener("click", () => {
-  if (restartAttempts < 3) {
+  if (restartAttempts < 2) {
     restartAttempts++;
     initial();
     displayContainer.classList.remove("hide");
@@ -195,7 +195,7 @@ nextBtn.addEventListener(
       countOfQuestion.innerHTML =
         questionCount + 1 + " of " + quizArray.length + " Question";
       quizDisplay(questionCount);
-      count = 21;
+      count = 91;
       clearInterval(countdown);
       timerDisplay();
     }
@@ -275,7 +275,7 @@ function initial() {
   quizContainer.innerHTML = "";
   questionCount = 0;
   scoreCount = 0;
-  count = 21;
+  count = 91;
   clearInterval(countdown);
   timerDisplay();
   quizCreator();
