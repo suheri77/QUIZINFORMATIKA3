@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MCQ Quiz</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style3.css" />
+</head>
+<body>
+  <div class="start-screen">
+    <h1>Welcome to the Quiz</h1>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+    </div>
+    <button id="start-button">Mulai</button>
+  </div>
+  <div id="display-container" class="hide">
+    <div class="header">
+      <div class="number-of-count">
+        <span class="number-of-question">1 of 3 questions</span>
+      </div>
+      <div class="timer-div">
+        <img src="timer-icon.svg" />
+        <span class="time-left">15s</span>
+      </div>
+    </div>
+    <div id="container">
+      <!-- questions and options will be displayed here -->
+    </div>
+    <button id="next-button">Next</button>
+  </div>
+  <div class="score-container hide">
+    <div id="user-score">Demo Score</div>
+    <button id="restart">Restart</button>
+  </div>
+
+  <section class="wrapper">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="title">
+
+    </div>
+</section>
+ 
+  <!-- Script -->
+  <script src="script2.js"></script>
+  <script src=""></script>
+</body>
+</html>
