@@ -170,7 +170,7 @@ const quizArray = [
 
 // Restart Quiz
 restart.addEventListener("click", () => {
-  if (restartAttempts < 2) {
+  if (restartAttempts < 1) {
     restartAttempts++;
     initial();
     displayContainer.classList.remove("hide");
